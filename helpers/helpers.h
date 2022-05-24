@@ -1,5 +1,5 @@
 //
-// Created by Asus on 24.05.2022.
+// Created by w65510 on 24.05.2022.
 //
 
 #ifndef W65510_HELPERS_H
