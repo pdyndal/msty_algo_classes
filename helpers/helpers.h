@@ -9,6 +9,8 @@ void swap(int *first, int *second);
 
 void display(const int *arr, int size);
 
+int get_data();
+
 int *generate_data_sorted_ascending(unsigned int size);
 
 int *generate_data_sorted_descending(unsigned int size);

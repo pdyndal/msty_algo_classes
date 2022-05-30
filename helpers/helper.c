@@ -19,8 +19,15 @@ void display(const int *arr, int size) {
     printf("\n");
 }
 
+int get_data() {
+    int input;
+    scanf("%d", &input);
+
+    return input;
+}
+
 int *generate_data_sorted_ascending(unsigned int size) {
-    int *arr = malloc(size);
+    int *arr = malloc(size * sizeof(int));
 
     if(size == 0) return arr;
 
@@ -34,7 +41,7 @@ int *generate_data_sorted_ascending(unsigned int size) {
 }
 
 int *generate_data_sorted_descending(unsigned int size) {
-    int *arr = malloc(size);
+    int *arr = malloc(size * sizeof(int));
 
     if(size == 0) return arr;
 
@@ -48,7 +55,7 @@ int *generate_data_sorted_descending(unsigned int size) {
 }
 
 int *generate_data_randomized(unsigned int size){
-    int *arr = malloc(size);
+    int *arr = malloc(size * sizeof(int));
 
     for (int i = 0; i < size; ++i) {
         arr[i] = rand() % 51;
