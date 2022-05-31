@@ -77,7 +77,7 @@ void get_algorithm(int *arr, int size) {
             selection_sort(arr, size);
             break;
         case 3:
-            merge_sort(arr, 0, size - 1, size);
+            init_merge_sort(arr, size);
             break;
         case 4:
             printf("Input selected value in array. \n");
@@ -101,14 +101,14 @@ int show_menu() {
     int data_length = get_data_length();
     int *data = get_data_type(data_length);
 
-    printf("Generated array: \n");
-    display(data, data_length);
+//    printf("Generated array: \n");
+//    display(data, data_length);
     printf("\n");
 
     get_algorithm(data, data_length);
 
-    printf("Array after algorithm array: \n");
-    display(data, data_length);
+//    printf("Array after algorithm array: \n");
+//    display(data, data_length);
     printf("\n");
 
     free(data);

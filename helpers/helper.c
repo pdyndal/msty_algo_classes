@@ -31,7 +31,7 @@ int *generate_data_sorted_ascending(unsigned int size) {
 
     if(size == 0) return arr;
 
-    arr[0] = rand() % 11;
+    arr[0] = rand() % 101;
 
     for (int i = 1; i < size; ++i) {
         arr[i] =  arr[i-1] + (rand() % 11);
@@ -45,7 +45,7 @@ int *generate_data_sorted_descending(unsigned int size) {
 
     if(size == 0) return arr;
 
-    arr[0] = rand() % 199;
+    arr[0] = rand() % 101;
 
     for (int i = 1; i < size; ++i) {
         arr[i] =  arr[i-1] - (rand() % 11);
@@ -58,7 +58,7 @@ int *generate_data_randomized(unsigned int size){
     int *arr = malloc(size * sizeof(int));
 
     for (int i = 0; i < size; ++i) {
-        arr[i] = rand() % 51;
+        arr[i] = rand() % 101;
     }
 
     return arr;
